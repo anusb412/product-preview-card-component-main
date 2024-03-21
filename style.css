@@ -97,9 +97,8 @@ body {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .lside {
@@ -108,9 +107,9 @@ body {
 
 .rside {
   background-color: white;
-  max-width: 20rem;
+  max-width: 22rem;
   border-radius: 0 2rem 2rem 0;
-  object-fit: cover;
+  padding: 2rem;
 }
 
 h1 {
@@ -124,18 +123,17 @@ h1 {
 
 h2 {
   font-family: fraunces;
-  text-transform: none;
   font-weight: 900;
   font-size: 2.5rem;
-  line-height: 0.75rem;
+  line-height: 0.5rem;
 }
 
 p {
   font-family: mont;
   font-size: 1.1rem;
-  padding-top: 2rem;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
+  padding-top: 2rem;
 }
 
 img {
@@ -154,16 +152,17 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: left;
+  margin-bottom: 2rem;
 }
 
 button {
-  width: 18rem;
-  height: 4rem;
   border-radius: 0.5rem;
   background-color: hsl(158, 36%, 37%);
   color: white;
   font-family: mont;
   font-weight: 700;
+  width: 15rem;
+  height: 3rem;
 }
 span {
   padding-left: 2rem;
