@@ -103,15 +103,14 @@ body {
 }
 
 .lside {
-  height: 500px;
-  width: 375px;
+  max-width: 22rem;
 }
 
 .rside {
   background-color: white;
-  height: 600px;
-  width: 370px;
-  padding: 2rem;
+  max-width: 20rem;
+  border-radius: 0 2rem 2rem 0;
+  object-fit: cover;
 }
 
 h1 {
@@ -141,6 +140,7 @@ p {
 
 img {
   border-radius: 2rem 0 0 2rem;
+  object-fit: cover;
 }
 
 h3 {
@@ -160,7 +160,6 @@ button {
   width: 18rem;
   height: 4rem;
   border-radius: 0.5rem;
-  margin-top: 3rem;
   background-color: hsl(158, 36%, 37%);
   color: white;
   font-family: mont;
