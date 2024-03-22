@@ -12,16 +12,27 @@
   </head>
   <body>
     <main>
-      <div class="container">
+      <div class="card">
+        <!--Container Holding the Card Contents-->
         <div class="lside">
-          <img src="images/image-product-desktop.jpg" alt="A close up picture of an expensive bottle of perfume." />
+          <!--Left side div holding the picture-->
+          <picture>
+            <!--Also note, if you ever need more than one source element inside a picture,--!
+                    <!--they will need to be in the correct order.--!
+            <!-- largest image -->
+            <source srcset="/media/images/decorative-image-3.jpg" media="(min-width: 60rem)" />
+            <!-- medium image -->
+            <source srcset="/media/images/decorative-image-2.jpg" media="(min-width: 40rem)" />
+            <!-- smallest image (default) -->
+            <img src="/media/images/decorative-image-1.jpg" alt="" />
+          </picture>
         </div>
         <div class="rside">
-          <h1>Perfume</h1>
+          <p>Perfume</p>
 
-          <h2>Gabrielle</h2>
-          <h2>Essence Eau</h2>
-          <h2>De Parfum</h2>
+          <h1>Gabrielle</h1>
+          <h1>Essence Eau</h1>
+          <h1>De Parfum</h1>
 
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
